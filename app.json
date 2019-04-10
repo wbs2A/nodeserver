@@ -1,0 +1,8 @@
+{
+  "name": "Node Server",
+  "description": "node server from tinymce azi tests",
+  "respository": "https://github.com/wbs2a/nodeserver",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
