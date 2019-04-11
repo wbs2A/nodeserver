@@ -4,7 +4,7 @@ var io = require('socket.io')(http);
 
 
 const setUserOnRoom = require('./service/firebaseService').setUserOnRoom
-
+const port = process.env.PORT || 12345
 const colors = ["#c06b74",
 "#3cc755",
 "#9841b8",
@@ -147,9 +147,9 @@ io.on('connection', function(client){
     
 });
 app.get('/', function(req, res){
-    res.send("<h1> Hello</h1>");
+    res.send("<h1> rodando em "+port+"</h1>");
 
 });
-http.listen(process.env.PORT || 12345, function(){
+http.listen(port, function(){
     console.log(`listening on *:5000`);
 });
