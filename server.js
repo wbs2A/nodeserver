@@ -149,7 +149,7 @@ io.on('connection', function(client){
     
 });
 app.get('/', function(req, res){
-    res.send("<h1> Olá</h1>");
+    res.send("<h1> Hello</h1>");
 
 });
 http.listen(PORT, function(){
