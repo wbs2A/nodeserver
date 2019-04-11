@@ -106,8 +106,6 @@ const colors = ["#c06b74",
 "#ad5149",
 "#964550"]
 
-const PORT = 5000
-
 function getColor(){
     var id = Math.floor(Math.random()*colors.length);
     var color = colors[id];
@@ -152,6 +150,6 @@ app.get('/', function(req, res){
     res.send("<h1> Hello</h1>");
 
 });
-http.listen(PORT, function(){
+http.listen(process.env.port, function(){
     console.log(`listening on *:5000`);
 });
