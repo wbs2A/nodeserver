@@ -150,6 +150,6 @@ app.get('/', function(req, res){
     res.send("<h1> Hello</h1>");
 
 });
-http.listen(process.env.port, function(){
+http.listen(process.env.PORT || 12345, function(){
     console.log(`listening on *:5000`);
 });
